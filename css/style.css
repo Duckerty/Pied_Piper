@@ -199,15 +199,18 @@ body {
 }
 
 .team__inner {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team__inner-item {
   text-align: center;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  margin-bottom: 70px;
 }
 
 .team__img-link {

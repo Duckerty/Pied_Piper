@@ -165,12 +165,13 @@ body{
     color: #007765;
   }
   &__inner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px 80px;
+    display: flex;
+    flex-wrap: wrap;
   }
   &__inner-item{
     text-align: center;
+    flex-basis: 33%;
+    margin-bottom: 70px;
   }
   &__img-link{
     position: relative;
